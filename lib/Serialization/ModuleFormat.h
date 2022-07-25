@@ -2104,6 +2104,14 @@ namespace decls_block {
     BCVBR<5>        // platform
   >;
 
+  using DocumentationDeclAttrLayout = BCRecordLayout<
+    Documentation_DECL_ATTR,
+    BCFixed<1>,         // implicit flag
+    IdentifierIDField,  // metadata text
+    BCFixed<1>,         // has visibility
+    AccessLevelField    // visibility
+  >;
+
 #undef SYNTAX_SUGAR_TYPE_LAYOUT
 #undef TYPE_LAYOUT
 #undef TYPE_LAYOUT_IMPL

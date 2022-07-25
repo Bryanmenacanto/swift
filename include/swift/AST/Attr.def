@@ -746,6 +746,11 @@ SIMPLE_DECL_ATTR(_alwaysEmitConformanceMetadata, AlwaysEmitConformanceMetadata,
   OnProtocol | UserInaccessible | ABIStableToAdd | ABIStableToRemove | APIStableToAdd | APIStableToRemove,
   132)
 
+DECL_ATTR(_documentation, Documentation,
+  OnAnyDecl | UserInaccessible |
+  APIBreakingToAdd | APIStableToRemove | ABIStableToAdd | ABIStableToRemove,
+  133)
+
 // If you're adding a new underscored attribute here, please document it in
 // docs/ReferenceGuides/UnderscoredAttributes.md.
 
